@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/ic_login_background"
+    tools:context="com.cuitianci.app.activityinfo.LoginActivity">
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/ic_login_picture"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="50dp">
+
+        <EditText
+            android:id="@+id/login_username"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:maxLength="12"
+            android:maxLines="1"
+            android:hint="账号"
+            android:digits="1234567890abcdefghijklmnopqrstuvwxyz"
+            android:layout_gravity="center_vertical"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:gravity="center_horizontal"
+        android:layout_height="60dp">
+        <EditText
+            android:id="@+id/login_password"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:maxLength="15"
+            android:maxLines="1"
+            android:hint="密码"
+            android:layout_gravity="center_vertical"
+            android:inputType="textPassword"/>/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="25dp"
+        android:gravity="center_horizontal">
+        <CheckBox
+        android:id="@+id/login_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="记住密码"/>
+        <CheckBox
+            android:id="@+id/auto_login_checkbox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:text="自动登陆"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/login_login"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:textSize="20dp"
+        android:background="#C3F8FC"
+        android:text="登录"/>
+
+    <TextView
+        android:id="@+id/resetPw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="30dp"
+        android:textSize="15sp"
+        android:text="修改密码"
+        android:textColor="#4876FF" />
+
+</LinearLayout>

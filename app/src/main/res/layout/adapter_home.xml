@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+         android:layout_width="match_parent"
+         android:layout_height="100dp" >
+
+         <ImageView
+             android:id="@+id/home_adapter_iv"
+             android:layout_width="80dp"
+             android:layout_height="90dp"
+             android:layout_centerVertical="true"
+             android:padding="5dp"
+             android:src="@drawable/ic_activity" />
+
+         <TextView
+             android:id="@+id/home_adapter_title"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_marginTop="20dp"
+             android:layout_toRightOf="@id/home_adapter_iv"
+             android:gravity="center_vertical"
+             android:text="默认标题"
+             android:textSize="14sp"
+             android:textStyle="bold" />
+
+         <TextView
+             android:id="@+id/home_adapter_summary"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_below="@id/home_adapter_title"
+             android:layout_marginTop="8dp"
+             android:layout_toRightOf="@id/home_adapter_iv"
+             android:text="默认简介"
+             android:textSize="12sp" />
+
+     </RelativeLayout>
